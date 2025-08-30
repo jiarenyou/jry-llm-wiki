@@ -60,6 +60,6 @@ title: 🌱 JRY's digital garden 🚀
 花园的大门永远敞开，欢迎随时来逛逛，也欢迎随时交流
 
 
-email：jiarenyou460@gmail.com
+Email：jiarenyou460@gmail.com
 
 **愿你在这里，也能找到属于自己的那颗种子。**
