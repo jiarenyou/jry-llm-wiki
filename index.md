@@ -62,4 +62,4 @@ title: 🌱 JRY's digital garden 🚀
 
 Email：jiarenyou460@gmail.com
 
-**愿你在这里，也能找到属于自己的那颗种子。**
+**愿你在这里，共同进步。**
