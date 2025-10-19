@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "深度思考/为何西方领袖常被调侃，而中国皇帝却“神圣不可侵犯”？.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "为何西方领袖常被调侃，而中国皇帝却“神圣不可侵犯”？"
             }
           }
         ]
@@ -147,13 +147,23 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "338849ddf8122720",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,6 +180,8 @@
   },
   "active": "2f4f62456c7b1d2d",
   "lastOpenFiles": [
+    "index.md",
+    "深度思考/为何西方领袖常被调侃，而中国皇帝却“神圣不可侵犯”？.md",
     "学习笔记/阿里巴巴大数据之路1/《大数据之路1》笔记3：数据管理.md",
     "学习笔记/阿里巴巴大数据之路1/《大数据之路1》笔记2：数据模型.md",
     "学习笔记/阿里巴巴大数据之路1/《大数据之路1》笔记1：总述和数据技术篇.md",
@@ -180,7 +192,6 @@
     "文章归档/技术/大数据/性能优化.md",
     "文章归档/文化/儒家的失守.md",
     "文章归档/技术/大数据/202508252048性能优化.md",
-    "index.md",
     "文章归档/技术/机器学习/决策树.md",
     "未命名.base",
     "文章归档/科学与艺术/从神经学了解压力.md",
@@ -196,7 +207,6 @@
     "文章归档/技术/AI/关于Transformer和MoE框架的一点思考.md",
     "文章归档/技术/机器学习/XGBoost.md",
     "文章归档/技术/机器学习/SVM 支持向量机.md",
-    "文章归档/技术/机器学习/PCA降维.md",
     "学习笔记/LLM张老师",
     "学习笔记",
     "我的项目",
