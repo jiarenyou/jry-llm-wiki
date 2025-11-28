@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "文章归档/other",
+  "templates_folder": "other",
   "templates_pairs": [
     [
       "",

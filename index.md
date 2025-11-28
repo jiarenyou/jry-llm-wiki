@@ -1,8 +1,8 @@
 ---
-title: 🌱 JRY's digital garden 🚀
+title: JRY's digital garden
 ---
 
-# 🌟 🌱 欢迎来到我的数字花园 🌱
+# 欢迎来到我的数字花园 
 
 
 
