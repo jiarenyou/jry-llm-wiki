@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "思考/别做电子仓鼠了：我是怎么把“囤积”变成“输出”的.md",
+                "file": "AIGC/AI的“语言通胀”.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "别做电子仓鼠了：我是怎么把“囤积”变成“输出”的"
+              "title": "AI的“语言通胀”"
             }
           }
         ]
@@ -180,8 +180,9 @@
   },
   "active": "2f4f62456c7b1d2d",
   "lastOpenFiles": [
-    "index.md",
     "思考/别做电子仓鼠了：我是怎么把“囤积”变成“输出”的.md",
+    "AIGC/AI的“语言通胀”.md",
+    "index.md",
     "学习笔记/阿里巴巴大数据之路(1)-笔记.md",
     "学习笔记/阿里巴巴大数据之路1/《大数据之路1》笔记1：总述和数据技术篇.md",
     "学习笔记/LLM张老师/第13课 GPTQ、AWQ、GGUF等模型量化概念讲解.md",
@@ -205,7 +206,6 @@
     "技术/AI/swift框架中swift_output输出的是什么.md",
     "技术/AI/pytorch初级.md",
     "技术/AI/DataLab 基于LLM的统一BI平台.md",
-    "技术/AI/面向知识的检索-增强生成综述.md",
     "other/Game Searching GIF by Xbox.gif",
     "other/Confused Oh No GIF by Minecraft.gif",
     "AIGC",
