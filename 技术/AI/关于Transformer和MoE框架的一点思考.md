@@ -3,6 +3,7 @@ title: 关于Transformer和MoE框架的一点思考
 draft: false
 tags:
   - AI
+  - 原理
 ---
 
 

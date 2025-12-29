@@ -3,6 +3,7 @@ title: AI的“语言通胀”
 draft: false
 tags:
   - AI
+  - 先锋
 ---
  ![](https://jry-img-file.oss-cn-beijing.aliyuncs.com/my_picture_file/202512012126978.png)
 
