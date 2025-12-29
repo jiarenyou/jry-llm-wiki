@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/AI/关于Transformer和MoE框架的一点思考.md",
+                "file": "学习笔记/n8n/n8n-1：安装部署.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "关于Transformer和MoE框架的一点思考"
+              "title": "n8n-1：安装部署"
             }
           }
         ]
@@ -180,6 +180,9 @@
   },
   "active": "e8245b2c46698c49",
   "lastOpenFiles": [
+    "技术/AI/关于Transformer和MoE框架的一点思考.md",
+    "学习笔记/n8n/n8n-1：安装部署.md",
+    "学习笔记/n8n",
     "技术/AI/AI的“语言通胀”.md",
     "技术/大数据/spark性能优化4：数据倾斜.md",
     "技术/大数据/spark性能优化5：资源配置与并行度优化.md",
@@ -207,8 +210,6 @@
     "思考/关于占卜的不可证伪性的探讨.md",
     "思考/关于历史认知、信息筛选与不变规律的思考.md",
     "思考/公地的悲剧.md",
-    "思考/对孔子“吾十有五而志与学...”的另一种解释和启示.md",
-    "摘抄/从神经学了解压力.md",
     "other/Game Searching GIF by Xbox.gif",
     "other/Confused Oh No GIF by Minecraft.gif",
     "AIGC",
@@ -217,7 +218,6 @@
     "技术/机器学习",
     "技术/大数据",
     "技术/AI",
-    "技术",
     "other/peace butterfly Sticker.gif",
     "other/Gemini_Generated_Image_frh6wifrh6wifrh6.png",
     "读书/other/peace butterfly Sticker.gif",
