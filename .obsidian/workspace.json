@@ -13,12 +13,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "读书",
-                "bFile": "读书",
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: 读书"
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -180,8 +180,10 @@
   },
   "active": "567e118a297b423e",
   "lastOpenFiles": [
-    "技术/大数据/阿里巴巴大数据之路(1)-笔记.md",
     "读书/《当下的力量》.md",
+    "读书/《活出生命的意义》.md",
+    "读书",
+    "技术/大数据/阿里巴巴大数据之路(1)-笔记.md",
     "学习笔记/n8n/n8n-1：安装部署.md",
     "技术/AI/关于Transformer和MoE框架的一点思考.md",
     "学习笔记/n8n",
@@ -209,7 +211,6 @@
     "思考/姜文：什么是电影的台词.md",
     "思考/慧能和一元论，二元论.md",
     "思考/关于占卜的不可证伪性的探讨.md",
-    "思考/关于历史认知、信息筛选与不变规律的思考.md",
     "other/Game Searching GIF by Xbox.gif",
     "other/Confused Oh No GIF by Minecraft.gif",
     "AIGC",
@@ -217,7 +218,6 @@
     "文化",
     "技术/机器学习",
     "技术/大数据",
-    "技术/AI",
     "other/peace butterfly Sticker.gif",
     "other/Gemini_Generated_Image_frh6wifrh6wifrh6.png",
     "读书/other/peace butterfly Sticker.gif",
