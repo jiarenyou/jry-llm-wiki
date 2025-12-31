@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fe526ef585792038",
+        "id": "a561926d88528db7",
         "type": "tabs",
         "children": [
           {
-            "id": "567e118a297b423e",
+            "id": "c11329748bb4a0f0",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -178,7 +174,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "567e118a297b423e",
+  "active": "c11329748bb4a0f0",
   "lastOpenFiles": [
     "读书/《当下的力量》.md",
     "读书/《活出生命的意义》.md",
