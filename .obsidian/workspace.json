@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f9a80fa4e41c4505",
+        "id": "fe526ef585792038",
         "type": "tabs",
         "children": [
           {
-            "id": "4b4ad7464fd4cc15",
+            "id": "567e118a297b423e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "技术/大数据/阿里巴巴大数据之路(1)-笔记.md",
-                "mode": "source",
-                "source": false
+                "aFile": "读书",
+                "bFile": "读书",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "阿里巴巴大数据之路(1)-笔记"
+              "icon": "diff",
+              "title": "Diff: 读书"
             }
           }
         ]
@@ -178,8 +178,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4b4ad7464fd4cc15",
+  "active": "567e118a297b423e",
   "lastOpenFiles": [
+    "技术/大数据/阿里巴巴大数据之路(1)-笔记.md",
     "读书/《当下的力量》.md",
     "学习笔记/n8n/n8n-1：安装部署.md",
     "技术/AI/关于Transformer和MoE框架的一点思考.md",
@@ -193,7 +194,6 @@
     "技术/大数据/spark性能优化1：宽窄依赖优化.md",
     "技术/大数据/spark性能优化2：宽窄依赖优化.md",
     "技术/大数据/spark性能优化3：小文件问题.md",
-    "技术/大数据/阿里巴巴大数据之路(1)-笔记.md",
     "index.md",
     "index.md.tmp.1927.1764683899367",
     "index.md.tmp.1927.1764683850323",
