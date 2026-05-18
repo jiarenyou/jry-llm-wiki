@@ -72,6 +72,8 @@ This file is maintained by the LLM. Updated on every ingest.
 - [读书和思考的一点思考1](sources/du-shu-he-si-kao-de-yi-dian-si-kao-1.md) — 叔本华论读书与思考，AI时代的IPO模型
 - [读书和思考的一点思考2](sources/du-shu-he-si-kao-de-yi-dian-si-kao-2.md) — 用边际分析重新诠释读书与思考的平衡
 - [赵鼎新：r策略与K策略](sources/zhao-ding-xin-r-ce-lue-yu-k-ce-lue.md) — 生态学r/K策略对企业发展和个人成长的启示
+- [《当下的力量》](sources/dang-xia-de-li-liang.md) — 托利：强迫性思考是痛苦根源，意识是思维的主人
+- [《活出生命的意义》](sources/huo-chu-sheng-ming-de-yi-yi.md) — 弗兰克尔：意义疗法，发现生命意义的三种途径
 
 ## Entities
 - [DeepMind](entities/DeepMind.md) — Google旗下AI实验室，Chinchilla Law
@@ -94,6 +96,8 @@ This file is maintained by the LLM. Updated on every ingest.
 - [Hayek](entities/Hayek.md) — 奥地利-英国经济学家，知识论、自由市场
 - [DanKoe](entities/DanKoe.md) — 内容创作者，AI时代品味与使命导向策略
 - [WuJun](entities/WuJun.md) — 计算机科学家/作家，成长三维度
+- [Eckhart Tolle](entities/EckhartTolle.md) — 心灵导师，《当下的力量》作者
+- [Viktor Frankl](entities/ViktorFrankl.md) — 意义疗法创始人，集中营幸存者
 
 ## Concepts
 - [ALiBi](concepts/ALiBi.md) — 线性偏置位置编码（概念页见PositionalEncoding）
@@ -132,5 +136,7 @@ This file is maintained by the LLM. Updated on every ingest.
 - [CoaseTheorem](concepts/CoaseTheorem.md) — 科斯定律：交易成本与资源最优配置
 - [IdentityProblem](concepts/IdentityProblem.md) — 同一性问题：忒修斯之船、阿能诃鼓
 - [UnfalsifiabilityOfDivination](concepts/UnfalsifiabilityOfDivination.md) — 占卜的不可证伪性：逻辑闭环与心理需求
+- [Logotherapy](concepts/Logotherapy.md) — 意义疗法：意义意志、悲剧乐观主义、三种意义途径
+- [Mindfulness](concepts/Mindfulness.md) — 当下觉察：强迫性思考、小我、痛苦之身、冥想消解
 
 ## Syntheses
