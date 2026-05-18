@@ -3,7 +3,7 @@
 This file is maintained by the LLM. Updated on every ingest.
 
 ## Overview
-- [Overview](overview.md) — LLM 张老师课程全景综合
+- [Overview](overview.md) — 五大知识领域全景综合：LLM/AI、大数据工程、量化金融、哲学经济学、读书笔记
 
 ## Sources
 - [第1课 线性变换](sources/llm-lesson-01-linear-transformation.md) — 线性变换几何直观与矩阵表示，Transformer权重矩阵
@@ -74,6 +74,89 @@ This file is maintained by the LLM. Updated on every ingest.
 - [赵鼎新：r策略与K策略](sources/zhao-ding-xin-r-ce-lue-yu-k-ce-lue.md) — 生态学r/K策略对企业发展和个人成长的启示
 - [《当下的力量》](sources/dang-xia-de-li-liang.md) — 托利：强迫性思考是痛苦根源，意识是思维的主人
 - [《活出生命的意义》](sources/huo-chu-sheng-ming-de-yi-yi.md) — 弗兰克尔：意义疗法，发现生命意义的三种途径
+
+- [BRAIN兼职顾问指南](sources/brain-consultant-guide.md) — WorldQuant BRAIN平台兼职顾问的完整入门指南
+- [BRAIN量化学习体系](sources/brain-learning-system.md) — WorldQuant三阶段量化学习体系：入门/进阶/高阶
+- [BRAIN自学路径图](sources/brain-self-study-roadmap.md) — BRAIN平台入门自学资源汇总，四大模块链接
+
+
+- [Claude Code实践1：Obsidian Skills](sources/claude-code-practice-1-obsidian-skills.md) — AI 编程助手操作 Obsidian 笔记库的 MCP 技能包
+- [Claude Code实践2：Tutorial 阅读心得](sources/claude-code-practice-2-tutorial.md) — 构建 AI 协作系统：规划/CLAUDE.md/Subagents/MCP 工作流
+
+
+- [巴菲特致股东信全集](sources/buffett-letters-overview.md) — 1957-2024共67封年度股东信，价值投资最重要的原始文献
+### Buffett Annual Letters
+- [1957年巴菲特致合伙人的信](sources/buffett-letter-1957.md)
+- [1958年巴菲特致合伙人的信](sources/buffett-letter-1958.md)
+- [1959年巴菲特致合伙人的信](sources/buffett-letter-1959.md)
+- [1960年巴菲特致合伙人的信](sources/buffett-letter-1960.md)
+- [1961年巴菲特致合伙人的信](sources/buffett-letter-1961.md)
+- [1962年巴菲特致合伙人的信](sources/buffett-letter-1962.md)
+- [1963年巴菲特致合伙人的信](sources/buffett-letter-1963.md)
+- [1964年巴菲特致合伙人的信](sources/buffett-letter-1964.md)
+- [1965年巴菲特致合伙人的信](sources/buffett-letter-1965.md)
+- [1966年巴菲特致合伙人的信](sources/buffett-letter-1966.md)
+- [1967年巴菲特致合伙人的信](sources/buffett-letter-1967.md)
+- [1968年巴菲特致合伙人的信](sources/buffett-letter-1968.md)
+- [1969年巴菲特致合伙人的信](sources/buffett-letter-1969.md)
+- [1971年巴菲特致股东的信](sources/buffett-letter-1971.md)
+- [1972年巴菲特致股东的信](sources/buffett-letter-1972.md)
+- [1973年巴菲特致股东的信](sources/buffett-letter-1973.md)
+- [1974年巴菲特致股东的信](sources/buffett-letter-1974.md)
+- [1975年巴菲特致股东的信](sources/buffett-letter-1975.md)
+- [1976年巴菲特致股东的信](sources/buffett-letter-1976.md)
+- [1977年巴菲特致股东的信](sources/buffett-letter-1977.md)
+- [1978年巴菲特致股东的信](sources/buffett-letter-1978.md)
+- [1979年巴菲特致股东的信](sources/buffett-letter-1979.md)
+- [1980年巴菲特致股东的信](sources/buffett-letter-1980.md)
+- [1981年巴菲特致股东的信](sources/buffett-letter-1981.md)
+- [1982年巴菲特致股东的信](sources/buffett-letter-1982.md)
+- [1983年巴菲特致股东的信](sources/buffett-letter-1983.md)
+- [1984年巴菲特致股东的信](sources/buffett-letter-1984.md)
+- [1985年巴菲特致股东的信](sources/buffett-letter-1985.md)
+- [1986年巴菲特致股东的信](sources/buffett-letter-1986.md)
+- [1987年巴菲特致股东的信](sources/buffett-letter-1987.md)
+- [1988年巴菲特致股东的信](sources/buffett-letter-1988.md)
+- [1989年巴菲特致股东的信](sources/buffett-letter-1989.md)
+- [1990年巴菲特致股东的信](sources/buffett-letter-1990.md)
+- [1991年巴菲特致股东的信](sources/buffett-letter-1991.md)
+- [1992年巴菲特致股东的信](sources/buffett-letter-1992.md)
+- [1993年巴菲特致股东的信](sources/buffett-letter-1993.md)
+- [1994年巴菲特致股东的信](sources/buffett-letter-1994.md)
+- [1995年巴菲特致股东的信](sources/buffett-letter-1995.md)
+- [1996年巴菲特致股东的信](sources/buffett-letter-1996.md)
+- [1997年巴菲特致股东的信](sources/buffett-letter-1997.md)
+- [1998年巴菲特致股东的信](sources/buffett-letter-1998.md)
+- [1999年巴菲特致股东的信](sources/buffett-letter-1999.md)
+- [2000年巴菲特致股东的信](sources/buffett-letter-2000.md)
+- [2001年巴菲特致股东的信](sources/buffett-letter-2001.md)
+- [2002年巴菲特致股东的信](sources/buffett-letter-2002.md)
+- [2003年巴菲特致股东的信](sources/buffett-letter-2003.md)
+- [2004年巴菲特致股东的信](sources/buffett-letter-2004.md)
+- [2005年巴菲特致股东的信](sources/buffett-letter-2005.md)
+- [2006年巴菲特致股东的信](sources/buffett-letter-2006.md)
+- [2007年巴菲特致股东的信](sources/buffett-letter-2007.md)
+- [2008年巴菲特致股东的信](sources/buffett-letter-2008.md)
+- [2009年巴菲特致股东的信](sources/buffett-letter-2009.md)
+- [2010年巴菲特致股东的信](sources/buffett-letter-2010.md)
+- [2011年巴菲特致股东的信](sources/buffett-letter-2011.md)
+- [2012年巴菲特致股东的信](sources/buffett-letter-2012.md)
+- [2013年巴菲特致股东的信](sources/buffett-letter-2013.md)
+- [2014年巴菲特致股东的信](sources/buffett-letter-2014.md)
+- [2015年巴菲特致股东的信](sources/buffett-letter-2015.md)
+- [2016年巴菲特致股东的信](sources/buffett-letter-2016.md)
+- [2017年巴菲特致股东的信](sources/buffett-letter-2017.md)
+- [2018年巴菲特致股东的信](sources/buffett-letter-2018.md)
+- [2019年巴菲特致股东的信](sources/buffett-letter-2019.md)
+- [2020年巴菲特股东大会实录](sources/buffett-letter-2020.md)
+- [2021年巴菲特致股东的信](sources/buffett-letter-2021.md)
+- [2022年巴菲特致股东的信](sources/buffett-letter-2022.md)
+- [2023年巴菲特致股东的信](sources/buffett-letter-2023.md)
+- [2024年巴菲特致股东的信](sources/buffett-letter-2024.md)
+
+- [巴菲特：伯克希尔50年回顾](sources/buffett-berkshire-50-years-review.md) — 亲述伯克希尔的过去、现在与未来
+- [芒格：伯克希尔50周年评论](sources/munger-berkshire-50-years-commentary.md) — 芒格对伯克希尔50年的总结
+
 
 ## Entities
 - [DeepMind](entities/DeepMind.md) — Google旗下AI实验室，Chinchilla Law

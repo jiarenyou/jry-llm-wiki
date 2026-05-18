@@ -40,13 +40,18 @@ STUB_THRESHOLD_CHARS = 100
 
 
 def read_file(path: Path) -> str:
-    return path.read_text(encoding="utf-8") if path.exists() else ""
+    if not path.exists():
+        return ""
+    try:
+        return path.read_text(encoding="utf-8")
+    except UnicodeDecodeError:
+        return path.read_text(encoding="gbk", errors="replace")
 
 
 def all_wiki_pages() -> list[Path]:
     """All .md files in wiki/, excluding meta files."""
     exclude = {"index.md", "log.md", "lint-report.md", "health-report.md"}
-    return [p for p in WIKI_DIR.rglob("*.md") if p.name not in exclude]
+    return [p for p in WIKI_DIR.rglob("*.md") if p.name not in exclude and not p.name.startswith("._")]
 
 
 def strip_frontmatter(content: str) -> str:
@@ -159,6 +164,8 @@ def check_log_coverage(pages: list[Path]) -> list[dict]:
 
     missing = []
     for p in sorted(source_dir.glob("*.md")):
+        if p.name.startswith("._"):
+            continue
         # Try matching by slug (filename without .md) or by frontmatter title
         slug = p.stem.lower().replace("-", " ").replace("_", " ")
 

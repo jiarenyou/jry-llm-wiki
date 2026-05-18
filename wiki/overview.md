@@ -16,85 +16,155 @@ sources:
   - llm-lesson-11-positional-encoding
   - llm-lesson-12-lora-qlora
   - llm-lesson-13-model-quantization
+  - transformer-deep-dive
+  - qkv-matrices-explained
+  - transformer-vs-moe
+  - xtuner-quickstart
+  - pytorch-basics
+  - warmup-ratio
+  - ai-language-inflation
+  - datalab-llm-bi-platform
+  - rag-knowledge-survey
+  - swift-output-explained
+  - spark-performance-optimization-panorama
+  - spark-wide-narrow-dependency-optimization
+  - spark-small-files-problem
+  - spark-data-skew
+  - spark-resource-parallelism-optimization
+  - spark-memory-management
+  - hive-sql-syntax-guide
+  - data-warehouse-modeling-core
+  - data-warehouse-modeling-methodology
+  - data-compression
+  - data-governance-sla
+  - alibaba-big-data-path-notes
+  - performance-optimization-three-layers
+  - brain-consultant-guide
+  - brain-learning-system
+  - brain-self-study-roadmap
   - dong-xue-zhi-yu
   - ping-yong-zhi-e
   - gong-di-de-bei-ju
   - jing-ji-xue-da-shi-ha-ye-ke
+  - dang-xia-de-li-liang
+  - huo-chu-sheng-ming-de-yi-yi
+  - claude-code-practice-1-obsidian-skills
+  - claude-code-practice-2-tutorial
 last_updated: 2026-05-18
 ---
 
 # Overview
 
-*This page is maintained by the LLM. It is updated on every ingest to reflect the current synthesis across all sources.*
+*本页面由 LLM 维护，每次摄入后更新，反映所有来源文档的综合理解。*
 
-## LLM 张老师课程全景
+本 wiki 收录了 **5 大知识领域**的笔记与学习资料，覆盖 LLM/AI、大数据工程、量化金融、哲学经济学、个人成长与读书笔记。
 
-本 wiki 目前收录了 **LLM 张老师的 13 节大模型课程**，涵盖从数学基础到部署优化的完整知识链路。课程按四个阶段递进：
+---
 
-### 第一阶段：数学基础（第1-3课）
-从 [[LinearTransformation|线性变换]] 的几何直观出发，理解 [[Transformer]] 中 WQ/WK/WV 权重矩阵的本质。接着学习 [[DecodingStrategy|解码策略]]（Temperature/Top-K/Top-P/Beam Search），掌握大模型如何从概率分布生成文本。最后通过 [[ScalingLaw]] 理解模型规模、数据量、计算量之间的幂律关系——**Chinchilla Law 告诉我们：数据量应约为参数量的 20 倍**。
+## 一、LLM 与 AI 技术
 
-### 第二阶段：代码实现（第4-6课）
-从零手写 [[Transformer]] 架构（[[TrainingPipeline|Model.py → Train.py → Inference.py]]），理解每个组件的实现细节：多头注意力、前馈网络、残差连接、层归一化、位置编码。掌握 [[PyTorch]] 训练管线的完整流程：tiktoken 分词 → 批次构建 → 前向传播 → 交叉熵损失 → 反向传播 → [[WeightsAndBiases|AdamW]] 参数更新。
+### 张老师课程全景（13课）
 
-### 第三阶段：推理优化（第7-10课）
-这是课程的核心部分，聚焦大模型推理的 **三大瓶颈**：
-1. **注意力内存** — [[FlashAttention]] 通过 Tiling 分块 + Online Softmax 将 HBM 访问从 O(N²) 降至 O(N)
-2. **重复计算** — [[KVCache]] 缓存已计算的 Key/Value，实现 **56 倍推理加速**
-3. **注意力变种** — [[MultiHeadAttention|MHA]] → [[GQA]] → MQA，在性能与内存间取平衡（536MB → 130MB → 16MB）
-4. **长上下文** — [[SparseAttention|稀疏注意力]]（Random/Window/Global）和 [[InfiniAttention|无限注意力]]（压缩记忆）
+涵盖从数学基础到部署优化的完整知识链路，分四个阶段递进：
 
-### 第四阶段：微调与部署（第11-13课）
-- [[PositionalEncoding|位置编码]] 演进：正弦编码 → [[RoPE|旋转位置编码]]（LLaMA/Qwen）→ ALiBi（MPT/BLOOM）
-- [[LoRA]] 低秩适配：冻结原始权重，仅训练 ΔW=B×A，参数减少 **99%+**
-- [[QLoRA]]：4-bit 量化 + LoRA，让消费级 GPU 也能微调大模型
-- [[ModelQuantization|模型量化]]：GPTQ/AWQ/GGUF 等方案实现 FP32 → INT4 的精度压缩
+**第一阶段：数学基础（第1-3课）** — 从 [[LinearTransformation|线性变换]] 的几何直观出发，理解 [[Transformer]] 中 WQ/WK/WV 权重矩阵的本质。掌握 [[DecodingStrategy|解码策略]]（Temperature/Top-K/Top-P/Beam Search）。通过 [[ScalingLaw]] 理解幂律关系——**Chinchilla Law：数据量应约为参数量的 20 倍**。
 
-### 关键洞察
-1. **大模型训练**：Scaling Law 指导参数量与数据量的最优配比，FLOPs 估算硬件需求
-2. **推理加速**：Flash Attention + KV Cache + GQA 构成推理优化的"三驾马车"
-3. **高效微调**：LoRA/QLoRA 让个人开发者也能参与大模型训练
-4. **工程落地**：量化技术（GGUF/llama.cpp）让大模型在 CPU 上也能运行
+**第二阶段：代码实现（第4-6课）** — 从零手写 [[Transformer]] 架构（[[TrainingPipeline|Model.py → Train.py → Inference.py]]），掌握 [[PyTorch]] 训练管线：tiktoken 分词 → 批次构建 → 前向传播 → 交叉熵损失 → AdamW 参数更新。
 
-### 知识图谱连接
-课程内容形成紧密的知识网络：[[LinearTransformation]] → [[Transformer]] → [[MultiHeadAttention]] → [[FlashAttention]] → [[KVCache]] → [[GQA]] → [[SparseAttention]]，每一步优化都建立在前一步的瓶颈分析之上。
+**第三阶段：推理优化（第7-10课）** — 聚焦三大瓶颈：
+- [[FlashAttention]]：Tiling + Online Softmax，HBM 访问 O(N²) → O(N)
+- [[KVCache]]：缓存 Key/Value，**56 倍推理加速**
+- [[MultiHeadAttention|MHA]] → [[GQA]] → MQA：536MB → 130MB → 16MB
+- [[SparseAttention|稀疏注意力]] 与 [[InfiniAttention|无限注意力]]：长上下文方案
 
-## 杂记：哲学、经济学与文化思考
+**第四阶段：微调与部署（第11-13课）** — [[PositionalEncoding|位置编码]] 演进（正弦 → [[RoPE]] → [[ALiBi]]），[[LoRA]]/[[QLoRA]] 低秩适配（参数减少 99%+），[[ModelQuantization|模型量化]]（GPTQ/AWQ/GGUF）。
 
-本 wiki 收录了 **30 篇杂记**，横跨哲学、经济学、文化历史、佛教、个人成长等领域，形成一个密集互联的思想网络。
+### 补充专题
+
+- [[Transformer|Transformer 深入理解]]：编解码与注意力机制深度拆解
+- QKV 矩阵：Query/Key/Value 含义与计算流程
+- [[MoE|Transformer vs MoE]]：混合专家架构对比
+- [[XTuner]] 快速上手：上海 AI Lab 微调工具库实战
+- [[PyTorch]] 初级：Tensor → 数据加载 → 模型搭建 → 训练循环 → ONNX 部署
+- warmup_ratio：学习率预热比例参数
+- AI 语言通胀：人机交互中语言通胀与高效 Prompt 原则
+- [[RAG]] 综述：面向知识的检索增强生成
+- SWIFT 框架：swift_output 输出解析
+- Claude Code 实践：Obsidian Skills MCP 技能包 + 完整教程阅读心得（Plan Mode / CLAUDE.md / Subagents / MCP 工作流）
+
+---
+
+## 二、大数据工程与数仓
+
+### Spark 性能优化体系
+
+六篇 Spark 优化笔记构成完整体系，从宏观到微观逐层深入：
+
+- [[SparkPerformance|性能优化全景图]]：框架总览与优化层次
+- [[HiveSQL|宽窄依赖优化]]：Shuffle 避免与算子选择策略
+- 小文件问题：合并策略与文件数控制
+- [[DataSkew|数据倾斜]]：诊断与解决方案（加盐、两阶段聚合）
+- 资源配置与并行度优化：Executor/内存/并行度调优
+- 内存管理：统一内存模型（Storage vs Execution）
+
+### Hive SQL
+
+- [[HiveSQL|Hive SQL 语法大全]]：完整语法参考
+
+### 数仓建模
+
+- [[DataWarehouse|数仓建模核心方法]]：维度建模、星型/雪花模型
+- [[DataWarehouse|数仓建模方法论]]：Kimball/Inmon/Data Vault
+- 阿里巴巴大数据之路笔记：阿里大数据实践经验
+
+### 数据治理与基础设施
+
+- [[DataGovernance|数据治理 SLA]]：服务水平协议与数据质量
+- 数据压缩：压缩算法选择与存储优化
+- [[DataLab]] 统一 BI 平台：腾讯 LLM-based 一站式 BI 平台，领域知识 + 多代理协作
+- 性能优化三层框架：系统化性能优化方法论
+
+---
+
+## 三、量化金融（WorldQuant）
+
+- [[BRAINPlatform|BRAIN 兼职顾问指南]]：从注册到成为顾问的完整流程，Challenge Score 达 Gold Level → 系统邀请 → 提交 alpha → 合同签署
+- [[QuantLearningPath|BRAIN 量化学习体系]]：三阶段（入门/进阶/高阶），从 alpha 概念到遗传算法 + 大规模回测
+- [[BRAINPlatform|BRAIN 自学路径图]]：四大模块入门资源汇总
+
+---
+
+## 四、哲学、经济学与文化
 
 ### 哲学主线：认知边界与存在追问
 
-从 [[PlatosCave|洞穴之喻]] 出发，一条主线贯穿多个哲学概念：[[Plato|柏拉图]]的理念世界 vs 感官世界 → [[Aristotle|亚里士多德]]的目的论 → 康德在 [[MetaphysicsAndEmpiricism|形而上与经验主义]] 中的调和 → [[CognitiveBoundaries|认知边界]] 的多维度揭示（希尔伯特、佛陀十四无忌、康德先天时空观）。[[IdentityProblem|同一性问题]] 通过忒修斯之船、阿能诃鼓追问事物存在的本质。[[HayekKnowledge|哈耶克知识论]] 则从经济学角度论证了知识分散在每个人大脑中，AI 无法完全模拟人的世界。
+从 [[PlatosCave|洞穴之喻]] 出发：[[Plato|柏拉图]] 理念世界 vs 感官世界 → [[Aristotle|亚里士多德]] 目的论 → 康德 [[MetaphysicsAndEmpiricism|形而上与经验主义]] → [[CognitiveBoundaries|认知边界]]（希尔伯特、佛陀十四无忌、康德先天时空观）。[[IdentityProblem|同一性问题]] 以忒修斯之船追问事物本质。
 
 ### 经济学主线：资源配置与博弈
 
-[[TragedyOfCommons|公地悲剧]] 是经济学部分的核心枢纽，连接着 [[CoaseTheorem|科斯定律]]（产权与交易成本）、[[FairnessAndEfficiency|公平与效率]] 的权衡，以及噪音交易者理论。[[Hayek|哈耶克]] 的知识论为计划经济的不可能性提供了逻辑论证。
+[[TragedyOfCommons|公地悲剧]] 是核心枢纽，连接 [[CoaseTheorem|科斯定律]]（产权与交易成本）、[[FairnessAndEfficiency|公平与效率]] 的权衡。[[Hayek|哈耶克]] 知识论论证计划经济的不可能性。
 
-### 文化历史主线：儒学的变迁与中西对比
+### 文化历史：儒学变迁与中西对比
 
-[[EvolutionOfConfucius|孔子面孔的演变]] 是文化部分的核心，展示孔子形象从秦到今的六次转变。[[RuJiaDeShiShou|儒家的失守]] 分析宋代儒家应对佛教道教冲击的困境，[[WeiHeXiFangLingXiuChangBeiDiaoKan|中西政教关系差异]] 解释文化心理的深层根源。[[ThirteenInvitationsMaDong|对话马东]] 提供了审视文化变迁的宏观视角。
+[[EvolutionOfConfucius|孔子面孔的演变]] 展示六次形象转变；[[RuJiaDeShiShou|儒家的失守]] 分析宋代儒学应对佛道冲击；[[WeiHeXiFangLingXiuChangBeiDiaoKan|中西政教关系差异]] 揭示文化心理根源。
 
-### 佛教思想主线：实践优先与悬置智慧
+### 佛教思想：实践优先与悬置
 
-[[FourteenUndetermined|十四无忌]] 和 [[PoisonArrowParable|毒箭之喻]] 构成佛教思想的实践维度——专注于当下行动而非追问终极答案。[[HuinengAndMonism|慧能与一元论]] 探讨禅宗顿悟与一元论的关联。[[UnfalsifiabilityOfDivination|占卜的不可证伪性]] 中，佛陀悬置问题的态度与占卜系统让一切不可证伪形成鲜明对照。
+[[FourteenUndetermined|十四无忌]] 和毒箭之喻构成实践维度——专注当下非追问终极。[[UnfalsifiabilityOfDivination|占卜的不可证伪性]] 与佛陀悬置形成对照。
 
-### 个人成长与知识管理主线
+### 个人成长与知识管理
 
-[[WuJunGrowth|吴军：成长的三个维度]]（看得远、看得透、看得开）与 [[RKStrategy|r/K策略]] 互为呼应。[[ElectronicHamster|电子仓鼠]] 提出IPO模型（Input-Processing-Output）克服数字囤积。[[DanKoeAudienceGrowth|Dan Koe]] 在AI时代强调品味和使命导向。[[ReadingAndThinking1|读书与思考1]] 用叔本华论述独立思考的价值，[[ReadingAndThinking2|读书与思考2]] 用边际分析量化读书与思考的平衡。
+[[WuJunGrowth|吴军成长三维度]]（看得远/透/开）与 [[RKStrategy|r/K 策略]] 呼应；[[ElectronicHamster|电子仓鼠]] IPO 模型克服数字囤积；[[DanKoeAudienceGrowth|Dan Koe]] 强调品味与使命导向；[[ReadingAndThinking1|读书与思考]] 用叔本华和边际分析探讨独立思考价值。
 
-## 读书笔记：心灵与意义的探索
+---
 
-本 wiki 收录了 2 本深度读书笔记，形成一条从"觉察"到"意义"的思想链路。
+## 五、读书笔记：心灵与意义
 
-### 《当下的力量》——从思维中觉醒
+- [[Mindfulness|《当下的力量》]]：从思维中觉醒，「强迫性思考」与「小我」的消解，与佛陀「十四无忌」一脉相承
+- [[Logotherapy|《活出生命的意义》]]：弗兰克尔意义疗法——人永远拥有选择态度的自由，三种发现意义的途径
 
-[[Mindfulness|当下觉察]] 是托利思想的核心：思维只是工具，意识才是主人。"强迫性思考"让人在过去和未来间反复横跳，产生"头脑噪音"；"小我"由思维编织，依赖过去和未来存活，产生"痛苦之身"。消解之道是冥想（用意识观察思维）和全神贯注当下。留声机比喻精妙：针头必须稳定在一个点上，不能在过去未来间横跳。
+---
 
-这一理念与 [[FourteenUndetermined|十四无忌]] 中佛陀悬置终极问题的智慧、[[PoisonArrowParable|毒箭之喻]] 中专注于当下行动的教导一脉相承。
+## 知识网络总览
 
-### 《活出生命的意义》——在苦难中找到意义
-
-弗兰克尔在集中营的极端经历中发现：人的核心驱动力是对意义的追寻（"意义意志"），而非快乐或权力。[[Logotherapy|意义疗法]] 提出发现生命意义的三种途径：创造/工作、体验/爱、态度选择。核心洞见："人永远拥有选择态度的自由"——即使身体被禁锢，精神仍可保持独立。
-
-这两本书形成互补：托利教人从思维的牢笼中觉醒（觉察），弗兰克尔教人在苦难中找到活下去的理由（意义）。
+五大领域之间存在深层联系：Spark 的性能优化理念（瓶颈分析、分层优化）与 LLM 推理优化（Flash Attention、KV Cache、GQA）共享相同的工程思维方式；公地悲剧中的公平与效率权衡在数仓 SLA 治理中重现；哈耶克的知识分散论与 AI 辅助决策形成思想张力。整个知识网络以**瓶颈分析、分层抽象、实践优先**为共同主题。

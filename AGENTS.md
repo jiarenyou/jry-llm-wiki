@@ -70,11 +70,12 @@ Steps (in order):
 3. Write `wiki/sources/<slug>.md` — use the source page format below
 4. Update `wiki/index.md` — add entry under Sources section
 5. Update `wiki/overview.md` — revise synthesis if warranted
-6. Update/create entity pages for key people, companies, projects mentioned
-7. Update/create concept pages for key ideas and frameworks discussed
-8. Flag any contradictions with existing wiki content
-9. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <Title>`
-10. **Post-ingest validation** — check for broken `[[wikilinks]]`, verify all new pages are in `index.md`, print a change summary
+6. Run `python tools/sync-root-index.py` to regenerate the root `index.md` with any new sections/pages from overview
+7. Update/create entity pages for key people, companies, projects mentioned
+8. Update/create concept pages for key ideas and frameworks discussed
+9. Flag any contradictions with existing wiki content
+10. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <Title>`
+11. **Post-ingest validation** — check for broken `[[wikilinks]]`, verify all new pages are in `index.md`, print a change summary
 
 ### Source Page Format
 
@@ -292,3 +293,55 @@ Phase 3 proposes automatic `[[wikilink]]` insertion based on graph analysis. The
 |---|---|---|
 | HG-WA-01 | Graph layer MUST NOT auto-create pages from broken links — report only | LLM ingest produces hallucinated wikilinks; auto-creating amplifies noise |
 | HG-WA-02 | New slash commands MUST NOT duplicate existing command coverage | Prevents user confusion; merge into existing commands instead |
+
+
+<claude-mem-context>
+# Memory Context
+
+# [jry-llm-wiki] recent context, 2026-05-19 7:39am GMT+8
+
+Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision
+Format: ID TIME TYPE TITLE
+Fetch details: get_observations([IDs]) | Search: mem-search skill
+
+Stats: 36 obs (12,495t read) | 0t work
+
+### May 18, 2026
+296 10:35p 🔵 LLM Wiki Project Structure and Architecture Discovered
+297 " 🔵 JRY Digital Garden LLM Wiki Obsidian Vault Structure and Configuration
+298 " 🔵 LLM Wiki Agent System Architecture Discovered
+300 10:36p 🔵 LLM Wiki Agent Automated Knowledge Management System Discovered
+301 " 🔵 Wiki Health Check Tool Encounters UTF-8 Encoding Error
+302 10:37p 🔴 Wiki Health Check Tool Fixed to Handle macOS Resource Fork Files and Encoding Issues
+303 " 🔵 Dual Obsidian Vault Architecture Structure Comparison
+304 10:38p 🔵 Dual Obsidian Vault Architecture Structure Comparison
+307 " 🔵 Dual Knowledge Management System Integration Requested
+312 10:43p ✅ Wiki Overview Comprehensively Rewritten for Five Knowledge Domains
+316 10:44p 🔵 Precise Content Audit Identified 144 Uningested Raw Files Across Four Categories
+317 10:46p ✅ Claude Code Practice Notes Ingested into Wiki
+323 " ✅ Overview.md Updated to Include Claude Code Practice Sources
+324 " 🔵 Health.py Script Location Mismatch Discovered
+325 10:47p ✅ Apple Double Files Cleaned from Workspace
+326 10:48p 🔴 Health Check Script Now Filters Apple Double Files
+328 " 🔵 Wiki Organization Complete with Two Large Batches Remaining
+329 10:50p ✅ LLM Wiki Organization and Cleanup Project Completed
+330 " 🔵 Buffett & Munger Content Collection Structure Analyzed
+331 10:51p 🔵 Buffett & Munger Document Format Standardized with Frontmatter
+333 10:52p 🔵 Buffett & Munger Collection Categorized into Three Types
+336 10:54p 🟣 Buffett Letters Overview Page Created with Dynamic Index
+337 " ✅ Wiki Documentation Updated for Buffett & Munger Collection
+338 " ✅ Buffett & Munger Batch Ingestion Completed Successfully
+340 10:55p 🔵 Health Check Reveals Index and Log Coverage Gaps After Batch Ingestion
+341 10:56p 🔵 Health Check Logic Investigated for Log and Index Validation
+344 10:57p 🔴 Log Entries Corrected for Partnership Era (1957-1969)
+345 10:59p 🟣 All 67 Buffett Letters Added to Wiki Index
+346 11:11p 🔵 Index.md Structure Analysis for Synchronization Requirement
+347 " 🔵 Dual Index File Structure Comparison
+348 " 🔵 Overview.md Structure and Content Analysis
+### May 19, 2026
+350 1:06a 🔵 Wiki Overview Section Structure Mapped
+351 1:48a 🔵 LLM Wiki Root Index Synchronization Script Attempted
+352 1:49a ✅ Root Index Synchronization Script Created
+354 " 🔵 Root Index Out of Sync with Overview Content
+356 " ✅ Index.md Structured with Synchronization Markers
+</claude-mem-context>

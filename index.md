@@ -1,3 +1,4 @@
+<!-- sync:manual -->
 ---
 title: JRY's digital garden
 ---
@@ -11,41 +12,61 @@ title: JRY's digital garden
 你好，我是 **Zeno's Tortoise**。这不是一个博客，是我用好奇心编织的一张知识网络。
 
 技术、哲学、投资、阅读——在这里不是孤立的分类，而是相互呼应的对话。每一篇笔记，都是我停下来认真思考的痕迹。
+<!-- sync:end -->
 
 ---
 
 ### 技术探索
 
 > [!tip|label:🔧 技术探索] 从 Transformer 到 Spark，从理论到工程
-> - [LLM 张老师课程（13课完整系列）](./领域/LLM张老师/)：线性变换到模型量化，一条完整的学习路径
-> - [[Transformer]]：从零理解 Transformer 的每个细节
-> - [[面向知识的检索-增强生成综述]]：RAG 技术全景
-> - [Spark 性能优化（6篇系列）](./杂记/spark性能优化1：性能优化全景图)：大数据工程实践
+>
+> **LLM & AI**
+> - [[DecodingStrategy|解码策略]]
+> - [[LinearTransformation|线性变换]]
+> - [[ScalingLaw]]
+> - [[Transformer]]
+>
+> **大数据工程**
+> - [[DataSkew|数据倾斜]]
+> - [[HiveSQL|宽窄依赖优化]]
+> - [[SparkPerformance|性能优化全景图]]
 
 ### 哲学思辨
 
 > [!note|label:💡 哲学思辨] 在东西方智慧之间寻找平衡
-> - [[洞穴之喻]]：我们是否都困在自己的认知牢笼里？
-> - [[形而上和经验主义]]：经验之外，还有什么？
-> - [[慧能和一元论，二元论]]：禅宗顿悟与超越分别心
-> - [[平庸之恶：当思维停止，普通人如何成为帮凶？]]：独立思考为什么如此困难
+>
+> **哲学**
+> - [[Aristotle|亚里士多德]]
+> - [[CognitiveBoundaries|认知边界]]
+> - [[IdentityProblem|同一性问题]]
+> - [[MetaphysicsAndEmpiricism|形而上与经验主义]]
+>
+> **经济学 / 文化**
+> - [[CoaseTheorem|科斯定律]]
+> - [[FairnessAndEfficiency|公平与效率]]
+> - [[Hayek|哈耶克]]
 
 ### 投资智慧
 
 > [!example|label:🏦 投资智慧] 50+ 年巴菲特致股东信的系统性阅读
-> - [[2024]]：最新年度致股东信
-> - [[2023]]：芒格的最后注脚
-> - [[巴菲特致股东的信_1957_2018_zh]]：1957-2018 完整合集索引
-> - [[巴菲特50年评论-伯克希尔：过去现在和未来]]：伯克希尔 50 年全景回顾
+>
+> **量化金融**
+> - [[BRAINPlatform|BRAIN 兼职顾问指南]]
+> - [[BRAINPlatform|BRAIN 自学路径图]]
+> - [[QuantLearningPath|BRAIN 量化学习体系]]
+>
+> **价值投资**
+> - [[BuffettLettersOverview]] — 1957–2024共67封年度股东信
 
 ### 读书笔记
 
 > [!abstract|label:📖 读书笔记] 好书值得被认真对待
-> - [[读书/《当下的力量》]]：如何从强迫性思维中解脱
-> - [[读书/《活出生命的意义》]]：在极端苦难中寻找意义
+> - [[Logotherapy|《活出生命的意义》]]
+> - [[Mindfulness|《当下的力量》]]
 
 ---
 
+<!-- sync:manual -->
 ### 值得你停下来的一篇
 
 > [!quote] [[忒修斯之船、阿能诃鼓、金阁寺]]
@@ -59,9 +80,11 @@ title: JRY's digital garden
 
 > [!quote] [[读书和思考的一点思考2]]
 > 二八分的不仅是时间，更是思维方式——真正的智慧发生在学科的交叉地带。
+<!-- sync:end -->
 
----
+<!-- sync:manual -->
 
 花园的大门永远敞开。如果你被某篇笔记触动了思考，那正是这座花园存在的意义。
 
 **Email**：jiarenyou460@gmail.com | **GitHub**：[JRY-student](https://github.com/JRY-student)
+<!-- sync:end -->
