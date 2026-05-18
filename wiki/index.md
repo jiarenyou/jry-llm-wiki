@@ -19,6 +19,59 @@ This file is maintained by the LLM. Updated on every ingest.
 - [第11课 位置编码](sources/llm-lesson-11-positional-encoding.md) — Sinusoidal/RoPE/ALiBi位置编码方案
 - [第12课 LoRA/QLoRA](sources/llm-lesson-12-lora-qlora.md) — 低秩适配微调，4-bit量化
 - [第13课 模型量化](sources/llm-lesson-13-model-quantization.md) — GPTQ/AWQ/GGUF量化部署
+- [Transformer深入理解](sources/transformer-deep-dive.md) — 从编解码到注意力机制的深度拆解
+- [QKV矩阵解释](sources/qkv-matrices-explained.md) — Query/Key/Value矩阵含义与计算流程
+- [Transformer vs MoE](sources/transformer-vs-moe.md) — Transformer与MoE混合专家架构对比分析
+- [XTuner快速上手](sources/xtuner-quickstart.md) — 上海AI实验室大模型微调工具库实战指南
+- [PyTorch初级](sources/pytorch-basics.md) — Tensor/数据加载/模型搭建/训练循环/ONNX部署
+- [warmup_ratio](sources/warmup-ratio.md) — 学习率预热比例参数的作用与取值策略
+- [AI语言通胀](sources/ai-language-inflation.md) — 人机交互中的语言通胀现象与高效Prompt原则
+- [DataLab统一BI平台](sources/datalab-llm-bi-platform.md) — 腾讯LLM-based一站式BI平台，领域知识+多代理协作
+- [RAG综述](sources/rag-knowledge-survey.md) — 检索增强生成全景综述，基本原理到高级方法
+- [Swift框架swift_output](sources/swift-output-explained.md) — 适配器增量权重与合并部署流程
+- [Spark性能优化全景图](sources/spark-performance-optimization-panorama.md) — 七大优化方向与排查路线图
+- [Spark宽窄依赖优化](sources/spark-wide-narrow-dependency-optimization.md) — 宽窄依赖集中处理，Shuffle减少45%性能提升
+- [Spark小文件问题](sources/spark-small-files-problem.md) — 小文件成因、危害与源头预防/自动合并/AQE方案
+- [Spark数据倾斜](sources/spark-data-skew.md) — 定位诊断到两阶段聚合/Broadcast Join/AQE自动处理决策树
+- [Spark资源配置与并行度优化](sources/spark-resource-parallelism-optimization.md) — Executor配置、并行度公式、动态分配策略
+- [Spark内存管理](sources/spark-memory-management.md) — 内存模型四区域、统一内存管理、Kryo序列化、OOM诊断
+- [Hive SQL语法大全](sources/hive-sql-syntax-guide.md) — Hive完整语法参考：DDL/DML/DQL、分区分桶、复杂类型、函数
+- [数仓建模：核心方法](sources/data-warehouse-modeling-core.md) — ODS/DIM/DWD/DWS/ADS五层架构与Kimball维度建模精简版
+- [数仓建模：核心方法和方法论](sources/data-warehouse-modeling-methodology.md) — 电商订单域完整建模案例与系统学习方法论
+- [数据压缩](sources/data-compression.md) — IoT场景列式存储+编码+通用压缩实现5:1压缩比原理
+- [数据治理之SLA](sources/data-governance-sla.md) — SLI/SLO/SLA框架、四种数据SLA类型与设计落地八步法
+- [阿里巴巴大数据之路笔记](sources/alibaba-big-data-path-notes.md) — 阿里大数据平台实践：技术架构、数据模型、数据管理
+- [性能优化三层框架](sources/performance-optimization-three-layers.md) — 数据源头+SQL语句+计算引擎三层优化体系
+- [洞穴之喻](sources/dong-xue-zhi-yu.md) — 柏拉图洞穴之喻、柏拉图表征假说与AI的局限性
+- [平庸之恶](sources/ping-yong-zhi-e.md) — 阿伦特平庸之恶概念：放弃独立思考如何使普通人成为帮凶
+- [儒家的失守](sources/ru-jia-de-shi-shou.md) — 宋朝儒家面临佛教道教冲击时的阵地失守
+- [慧能和一元论、二元论](sources/hui-neng-yi-yuan-lun-er-yuan-lun.md) — 慧能分别心、庄子内心修养与一元论的联系
+- [形而上和经验主义](sources/xing-er-shang-he-jing-yan-zhu-yi.md) — 形而上学与经验主义的张力及康德的调和
+- [忒修斯之船、阿能诃鼓、金阁寺](sources/te-xiu-si-zhi-chuan-a-neng-he-gu-jin-ge-si.md) — 事物同一性的哲学追问
+- [毒箭之喻：应对间歇性努力](sources/du-jian-zhi-yu-ying-dui-jian-xie-xing-nu-li.md) — 佛陀毒箭之喻应用于克服间歇性努力
+- [岩中花树的故事](sources/yan-zhong-hua-shu-de-gu-shi.md) — 王阳明心学中存在与感知的关系
+- [公地的悲剧](sources/gong-di-de-bei-ju.md) — 个体理性与集体理性冲突导致资源耗竭
+- [亚里士多德《政治学》中的高利贷](sources/ya-li-shi-duo-de-zheng-zhi-xue-gao-li-dai.md) — 目的论视角下利息"不自然"的论证
+- [从法律经济学角度了解公平效率](sources/gong-di-de-bei-ju-fairness-efficiency.md) — 科斯定律下的公平与效率权衡
+- [经济学中"知识"的了解](sources/jing-ji-xue-zhong-zhi-shi-de-liao-jie.md) — 哈耶克关于知识分散性和价格机制
+- [经济学大师哈耶克](sources/jing-ji-xue-da-shi-ha-ye-ke.md) — 哈耶克生平、思想与知识论
+- [关于历史认知、信息筛选与不变规律的思考](sources/guan-yu-li-shi-ren-zhi-xin-xi-shai-xuan-yu-bu-bian-gui-lu-de-si-kao.md) — 历史中不变规律与信息筛选系统
+- [关于占卜的不可证伪性](sources/guan-yu-zhan-bo-de-bu-ke-zheng-wei-xing.md) — 占卜系统不可证伪性的逻辑分析与心理机制
+- [为何西方领袖常被调侃](sources/wei-he-xi-fang-ling-xiu-chang-bei-diao-kan.md) — 中西政教关系差异对领袖形象的影响
+- [孔子面孔的演变](sources/kong-zi-mian-kong-de-yan-bian.md) — 孔子形象在中国历史上的六次重大转变
+- [对孔子人生阶段的另一种解释](sources/dui-kong-zi-wu-shi-you-wu-er-zhi-yu-xue-ling-yi-zhong-jie-shi.md) — 孔子"吾十有五而志于学"的重新解读
+- [十三邀对话马东](sources/shi-san-yao-dui-hua-ma-dong.md) — 许知远与马东关于文化、娱乐与时代的对话
+- [十四无忌](sources/shi-si-wu-ji.md) — 佛陀拒绝回答的十四个形而上学问题
+- [卡农、赋格](sources/ka-nong-fu-ge.md) — 复调音乐形式中的数学对称之美
+- [吴军：成长的三个维度](sources/wu-jun-cheng-zhang-de-san-ge-wei-du.md) — 看得远、看得透、看得开
+- [姜文：什么是电影的台词](sources/jiang-wen-dian-ying-de-tai-ci.md) — 电影台词的深层含义与艺术表达
+- [《信条》和萨托方块](sources/xin-tiao-he-sa-tuo-fang-kuai.md) — 时间循环哲学与回文结构
+- [与AI的一次对话：认知的边界](sources/yu-ai-de-yi-ci-dui-hua-ren-zhi-de-bian-jie.md) — 希尔伯特、佛陀、康德揭示理性极限
+- [别做电子仓鼠了](sources/bie-zuo-dian-zi-cang-shu.md) — IPO模型：从数字囤积到知识输出
+- [如何扩大受众--Dan Koe](sources/ru-guo-ni-mei-you-fen-si-ru-he-kuo-da-shou-zhong.md) — AI时代内容创作的品味与使命导向策略
+- [读书和思考的一点思考1](sources/du-shu-he-si-kao-de-yi-dian-si-kao-1.md) — 叔本华论读书与思考，AI时代的IPO模型
+- [读书和思考的一点思考2](sources/du-shu-he-si-kao-de-yi-dian-si-kao-2.md) — 用边际分析重新诠释读书与思考的平衡
+- [赵鼎新：r策略与K策略](sources/zhao-ding-xin-r-ce-lue-yu-k-ce-lue.md) — 生态学r/K策略对企业发展和个人成长的启示
 
 ## Entities
 - [DeepMind](entities/DeepMind.md) — Google旗下AI实验室，Chinchilla Law
@@ -31,6 +84,16 @@ This file is maintained by the LLM. Updated on every ingest.
 - [PyTorch](entities/PyTorch.md) — 深度学习框架
 - [TriDao](entities/TriDao.md) — Flash Attention作者，Stanford
 - [WeightsAndBiases](entities/WeightsAndBiases.md) — ML实验跟踪平台
+- [XTuner](entities/XTuner.md) — 上海AI实验室大模型微调工具库
+- [SWIFT](entities/SWIFT.md) — 阿里达摩院大模型微调框架
+- [DataLab](entities/DataLab.md) — 腾讯一站式LLM-based BI平台
+- [Shanghai AI Lab](entities/ShanghaiAILab.md) — 上海人工智能实验室，InternLM/XTuner
+- [Confucius](entities/Confucius.md) — 儒家创始人，孔子形象在不同时代的六次转变
+- [Plato](entities/Plato.md) — 古希腊哲学家，洞穴之喻、理念世界
+- [Aristotle](entities/Aristotle.md) — 古希腊哲学家，目的论、形而上学奠基人
+- [Hayek](entities/Hayek.md) — 奥地利-英国经济学家，知识论、自由市场
+- [DanKoe](entities/DanKoe.md) — 内容创作者，AI时代品味与使命导向策略
+- [WuJun](entities/WuJun.md) — 计算机科学家/作家，成长三维度
 
 ## Concepts
 - [ALiBi](concepts/ALiBi.md) — 线性偏置位置编码（概念页见PositionalEncoding）
@@ -52,5 +115,22 @@ This file is maintained by the LLM. Updated on every ingest.
 - [SparseAttention](concepts/SparseAttention.md) — 稀疏注意力 O(N²)→O(N√N)
 - [TrainingPipeline](concepts/TrainingPipeline.md) — 训练管线：分词→批次→前向→损失→反向→更新
 - [Transformer](concepts/Transformer.md) — 编码器-解码器架构，自注意力+FFN
+- [RAG](concepts/RAG.md) — 检索增强生成，外部知识检索+LLM生成
+- [MoE](concepts/MoE.md) — 混合专家模型，门控机制+稀疏激活
+- [SparkPerformance](concepts/SparkPerformance.md) — Spark性能优化七大方向与优化路线图
+- [DataWarehouse](concepts/DataWarehouse.md) — 数据仓库建模：五层架构、维度建模四步法、指标体系
+- [DataGovernance](concepts/DataGovernance.md) — 数据治理：SLA框架、五种SLA维度、四种SLA类型
+- [DataSkew](concepts/DataSkew.md) — 数据倾斜：Shuffle中Key分布不均的定位与解决方案层次
+- [HiveSQL](concepts/HiveSQL.md) — Hive SQL：分区分桶、复杂类型、ETL模式
+- [PlatosCave](concepts/PlatosCave.md) — 洞穴之喻：表象世界vs真实世界，信息与权力
+- [BanalityOfEvil](concepts/BanalityOfEvil.md) — 平庸之恶：放弃独立思考使普通人成为帮凶
+- [TragedyOfCommons](concepts/TragedyOfCommons.md) — 公地悲剧：个体理性vs集体理性的冲突
+- [HayekKnowledge](concepts/HayekKnowledge.md) — 哈耶克知识论：知识分散性与价格机制
+- [CognitiveBoundaries](concepts/CognitiveBoundaries.md) — 认知边界：理性自限的数学/认识论/实践维度
+- [FairnessAndEfficiency](concepts/FairnessAndEfficiency.md) — 公平与效率：科斯定律下的法律经济学
+- [FourteenUndetermined](concepts/FourteenUndetermined.md) — 十四无忌：佛陀悬置的形而上学问题
+- [CoaseTheorem](concepts/CoaseTheorem.md) — 科斯定律：交易成本与资源最优配置
+- [IdentityProblem](concepts/IdentityProblem.md) — 同一性问题：忒修斯之船、阿能诃鼓
+- [UnfalsifiabilityOfDivination](concepts/UnfalsifiabilityOfDivination.md) — 占卜的不可证伪性：逻辑闭环与心理需求
 
 ## Syntheses
