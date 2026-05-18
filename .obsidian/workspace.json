@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "docs/automated-sync.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "automated-sync"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "fe8b030e825d1a6b",
   "lastOpenFiles": [
+    "README.md",
     "index.md",
     "wiki/index.md",
     "raw/巴菲特&芒格/芒格_伯克希尔50周年评论.md",
@@ -207,7 +208,6 @@
     "wiki/sources/huo-chu-sheng-ming-de-yi-yi.md",
     "wiki/sources/dang-xia-de-li-liang.md",
     "wiki/overview.md",
-    "raw/WorldQuant/【新人科普】一文助你成为BRAIN兼职研究顾问？.md",
     "wiki/entities",
     "wiki/concepts",
     "wiki/sources",
