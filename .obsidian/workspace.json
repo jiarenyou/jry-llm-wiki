@@ -11,10 +11,14 @@
             "id": "fe8b030e825d1a6b",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "raw/智能制造/产能利用率-Capacity Utilization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "产能利用率-Capacity Utilization"
             }
           }
         ]
@@ -176,8 +180,9 @@
   },
   "active": "fe8b030e825d1a6b",
   "lastOpenFiles": [
-    "GEMINI.md",
     "index.md",
+    "wiki/overview.md",
+    "GEMINI.md",
     "raw/巴菲特&芒格/1960.md",
     "AGENTS.md.tmp",
     "index.md.bak",
@@ -204,7 +209,6 @@
     "wiki/sources/buffett-letter-2008.md",
     "wiki/sources/buffett-letter-2007.md",
     "wiki/sources/buffett-letter-2006.md",
-    "wiki/sources/buffett-letter-2005.md",
     "raw/智能制造",
     "raw/AI数仓",
     "wiki/entities",
