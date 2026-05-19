@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "README"
             }
           }
         ]
@@ -180,9 +180,11 @@
   },
   "active": "fe8b030e825d1a6b",
   "lastOpenFiles": [
+    "index.md",
+    "GEMINI.md",
+    "AGENTS.md",
     "wiki/overview.md",
     "wiki/index.md",
-    "index.md",
     "wiki/sources/industrial-data-security.md",
     "wiki/sources/production-cost-metrics.md",
     "wiki/sources/material-management-and-pull.md",
@@ -204,8 +206,6 @@
     "wiki/sources/factory-master-data-management.md",
     "wiki/sources/data-lineage-and-metadata-management.md",
     "wiki/sources/data-service-api-layer.md",
-    "wiki/sources/factory-data-warehouse-modeling.md",
-    "wiki/sources/realtime-data-pipeline.md",
     "raw/harness",
     "AGENTS.md.tmp",
     "index.md.bak",
