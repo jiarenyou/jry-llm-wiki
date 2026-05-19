@@ -50,14 +50,33 @@ sources:
   - huo-chu-sheng-ming-de-yi-yi
   - claude-code-practice-1-obsidian-skills
   - claude-code-practice-2-tutorial
-last_updated: 2026-05-18
+  - smart-mfg-overview-and-industry-4
+  - isa-95-reference-architecture
+  - factory-data-platform-architecture
+  - oee-overall-equipment-effectiveness
+  - digital-twin
+  - mes-manufacturing-execution-system
+  - erp-enterprise-resource-planning
+  - scada-data-acquisition-and-monitoring
+  - industrial-data-governance-framework
+  - realtime-batch-unified-architecture
+  - factory-data-warehouse-modeling
+  - spc-statistical-process-control
+  - predictive-maintenance
+  - process-parameter-optimization
+  - intelligent-scheduling
+  - anomaly-detection-and-root-cause-analysis
+  - visual-quality-inspection
+  - production-cost-metrics
+  - industrial-data-security
+last_updated: 2026-05-19
 ---
 
 # Overview
 
 *本页面由 LLM 维护，每次摄入后更新，反映所有来源文档的综合理解。*
 
-本 wiki 收录了 **5 大知识领域**的笔记与学习资料，覆盖 LLM/AI、大数据工程、量化金融、哲学经济学、个人成长与读书笔记。
+本 wiki 收录了 **6 大知识领域**的笔记与学习资料，覆盖 LLM/AI、大数据工程、智能制造、量化金融、哲学经济学、个人成长与读书笔记。
 
 ---
 
@@ -165,6 +184,41 @@ last_updated: 2026-05-18
 
 ---
 
+## 六、智能制造与工业数据
+
+### 核心框架
+
+[[SmartManufacturing|智能制造]]以工业4.0为背景，[[ISA95|ISA-95]] 为系统集成标准，[[DigitalTwin|数字孪生]]为技术支柱。中国能力成熟度模型（CMMM）提供五级评估体系。
+
+### 工业数据平台
+
+[[IndustrialDataPlatform|五层架构]]（采集 → 存储 → 计算 → 服务 → 应用）是智能制造的数字底座：
+- **采集层**：SCADA + PLC 网关，OT/IT/外部三大数据源
+- **存储层**：时序数据库（TDengine/InfluxDB）+ 数据湖（Iceberg/Hudi）
+- **计算层**：Flink 实时 + Spark 离线，实时与离线统一架构
+- **服务层**：指标API + 报表服务 + 数据订阅
+- 应用层：[[OEE]] 实时看板、[[DataGovernance|数据治理]]、数据血缘
+
+### 生产系统
+
+七大核心系统构成 ISA-95 Level 3-4 的信息化骨架：MES（执行）→ ERP（规划）→ SCADA（采集）→ PLM（产品）→ QMS（质量）→ WMS（仓储）→ CMMS（维护）。
+
+### 关键指标体系
+
+- **OEE 三维度**：[[OEE|可用率]] × [[OEE|性能率]] × [[OEE|质量率]]，世界级 ≥ 85%
+- **质量指标**：良率（链式乘积）、FPY 直通率（最严格）、Cpk 过程能力
+- **设备指标**：MTBF（可靠性）、MTTR（可维护性）
+- **效率指标**：节拍时间 Takt Time、产能利用率
+
+### 优化与智能化
+
+- **工艺参数优化**：DOE → 贝叶斯优化 → 强化学习
+- **智能排产**：ML预测 + 运筹优化 + 实时反馈
+- **预测性维护**：传感器数据 + 统计/ML/DL模型，降本 30-50%
+- **视觉质检**：传统CV → 深度学习 → 视觉大模型
+
+---
+
 ## 知识网络总览
 
-五大领域之间存在深层联系：Spark 的性能优化理念（瓶颈分析、分层优化）与 LLM 推理优化（Flash Attention、KV Cache、GQA）共享相同的工程思维方式；公地悲剧中的公平与效率权衡在数仓 SLA 治理中重现；哈耶克的知识分散论与 AI 辅助决策形成思想张力。整个知识网络以**瓶颈分析、分层抽象、实践优先**为共同主题。
+六大领域之间存在深层联系：Spark 的性能优化理念（瓶颈分析、分层优化）与 LLM 推理优化（Flash Attention、KV Cache、GQA）共享相同的工程思维方式；工业数据平台的五层架构与数仓建模的分层思想一脉相承；OEE 的瓶颈分析方法论与 Spark 性能优化的排查路线图异曲同工；公地悲剧中的公平与效率权衡在数仓 SLA 治理中重现；哈耶克的知识分散论与 AI 辅助决策形成思想张力。整个知识网络以**瓶颈分析、分层抽象、实践优先**为共同主题。

@@ -1,72 +1,83 @@
-<!-- sync:manual -->
 ---
-title: JRY's digital garden
+title: JRY's wiki
 ---
 
 ![[2026-04-10-hero-banner.png]]
-
-# 欢迎来到我的数字花园
 
 > 真正的知识不在收藏夹里，在思考的痕迹中。
 
 你好，我是 **Zeno's Tortoise**。这不是一个博客，是我用好奇心编织的一张知识网络。
 
-技术、哲学、投资、阅读——在这里不是孤立的分类，而是相互呼应的对话。每一篇笔记，都是我停下来认真思考的痕迹。
-<!-- sync:end -->
+> [!info|label:关于这座花园]
+> 一座覆盖 **6 大领域、192 篇笔记、263 个知识节点**的数字花园。从 Transformer 到工业4.0，从柏拉图洞穴到巴菲特致股东信——每一条笔记，都是我停下来认真思考的痕迹。
 
 ---
 
-### 技术探索
-
-> [!tip|label:🔧 技术探索] 从 Transformer 到 Spark，从理论到工程
+> [!tip|label:🧠 LLM 与 AI 技术]
+> **从数学直觉到工程落地，13课打通大模型全链路**
 >
-> **LLM & AI**
-> - [[DecodingStrategy|解码策略]]
-> - [[LinearTransformation|线性变换]]
-> - [[ScalingLaw]]
-> - [[Transformer]]
+> **数学基础** — [[LinearTransformation|线性变换]] · [[DecodingStrategy|解码策略]] · [[ScalingLaw|Scaling Law]]
 >
-> **大数据工程**
-> - [[DataSkew|数据倾斜]]
-> - [[HiveSQL|宽窄依赖优化]]
-> - [[SparkPerformance|性能优化全景图]]
-
-### 哲学思辨
-
-> [!note|label:💡 哲学思辨] 在东西方智慧之间寻找平衡
+> **代码实现** — [[Transformer|从零手写 Transformer]] · [[TrainingPipeline|训练管线]] · [[PyTorch]]
 >
-> **哲学**
-> - [[Aristotle|亚里士多德]]
-> - [[CognitiveBoundaries|认知边界]]
-> - [[IdentityProblem|同一性问题]]
-> - [[MetaphysicsAndEmpiricism|形而上与经验主义]]
+> **推理优化** — [[FlashAttention|Flash Attention]] · [[KVCache|KV Cache]] · [[GQA]] · [[SparseAttention|稀疏注意力]]
 >
-> **经济学 / 文化**
-> - [[CoaseTheorem|科斯定律]]
-> - [[FairnessAndEfficiency|公平与效率]]
-> - [[Hayek|哈耶克]]
+> **微调部署** — [[LoRA]] · [[QLoRA]] · [[ModelQuantization|模型量化]] · [[RAG|检索增强生成]]
 
-### 投资智慧
-
-> [!example|label:🏦 投资智慧] 50+ 年巴菲特致股东信的系统性阅读
+> [!example|label:🏭 智能制造与工业数据]
+> **从 ISA-95 到数字孪生，构建工厂的数据底座**
 >
-> **量化金融**
-> - [[BRAINPlatform|BRAIN 兼职顾问指南]]
-> - [[BRAINPlatform|BRAIN 自学路径图]]
-> - [[QuantLearningPath|BRAIN 量化学习体系]]
+> **核心框架** — [[SmartManufacturing|工业4.0全景]] · [[ISA95|ISA-95标准]] · [[DigitalTwin|数字孪生]]
 >
-> **价值投资**
-> - [[BuffettLettersOverview]] — 1957–2024共67封年度股东信
+> **数据平台** — [[IndustrialDataPlatform|五层架构]]：采集 → 存储 → 计算 → 服务 → 应用
+>
+> **七大系统** — MES · ERP · SCADA · PLM · QMS · WMS · CMMS
+>
+> **指标体系** — [[OEE|设备综合效率]]：可用率 × 性能率 × 质量率，世界级 ≥ 85%
 
-### 读书笔记
+> [!note|label:⚙️ 大数据工程与数仓]
+> **Spark 六篇优化体系 + 数仓建模方法论**
+>
+> **Spark 优化** — [[SparkPerformance|性能全景图]] · [[DataSkew|数据倾斜]] · [[HiveSQL|Hive SQL 全语法]]
+>
+> **数仓建模** — [[DataWarehouse|Kimball 维度建模]] · ODS/DWD/DWS/ADS 五层架构
+>
+> **数据治理** — [[DataGovernance|SLA 框架]] · 数据压缩 · 主数据管理
 
-> [!abstract|label:📖 读书笔记] 好书值得被认真对待
-> - [[Logotherapy|《活出生命的意义》]]
-> - [[Mindfulness|《当下的力量》]]
+> [!success|label:🏦 投资与量化金融]
+> **67封巴菲特股东信 + WorldQuant BRAIN 量化体系**
+>
+> **价值投资** — [[BuffettLettersOverview|巴菲特致股东信全集 (1957-2024)]] · [[ValueInvesting|安全边际·能力圈·复利]]
+>
+> **量化金融** — [[BRAINPlatform|BRAIN 顾问指南]] · [[QuantLearningPath|三阶段学习体系]]
+
+> [!abstract|label:💭 哲学、经济学与文化]
+> **在东西方智慧之间追问认知的边界**
+>
+> **哲学** — [[PlatosCave|洞穴之喻]] · [[CognitiveBoundaries|认知边界]] · [[IdentityProblem|忒修斯之船]] · [[FourteenUndetermined|十四无忌]]
+>
+> **经济学** — [[TragedyOfCommons|公地悲剧]] · [[CoaseTheorem|科斯定律]] · [[HayekKnowledge|哈耶克知识论]]
+>
+> **文化** — [[EvolutionOfConfucius|孔子面孔的演变]] · [[RuJiaDeShiShou|儒家的失守]]
+
+> [!quote|label:📖 读书笔记：心灵与意义]
+> **好书值得被认真对待**
+>
+> [[Mindfulness|《当下的力量》]] — 从思维中觉醒，「强迫性思考」与「小我」的消解
+>
+> [[Logotherapy|《活出生命的意义》]] — 弗兰克尔：人永远拥有选择态度的自由
 
 ---
 
-<!-- sync:manual -->
+### 知识网络
+
+> [!question|label:这些领域如何对话？]
+> Spark 瓶颈分析与 LLM 推理优化（Flash Attention、KV Cache）共享同一套工程思维；工业数据平台的五层架构与数仓建模一脉相承；OEE 的损失分解和 Spark 的性能排查是同一棵决策树；哈耶克的知识分散论与 AI 辅助决策形成思想张力；巴菲特的「能力圈」与认知边界问题是同一个追问。
+>
+> **瓶颈分析 · 分层抽象 · 实践优先** — 六大领域的共同底色。
+
+---
+
 ### 值得你停下来的一篇
 
 > [!quote] [[忒修斯之船、阿能诃鼓、金阁寺]]
@@ -80,11 +91,9 @@ title: JRY's digital garden
 
 > [!quote] [[读书和思考的一点思考2]]
 > 二八分的不仅是时间，更是思维方式——真正的智慧发生在学科的交叉地带。
-<!-- sync:end -->
 
-<!-- sync:manual -->
+---
 
 花园的大门永远敞开。如果你被某篇笔记触动了思考，那正是这座花园存在的意义。
 
 **Email**：jiarenyou460@gmail.com | **GitHub**：[JRY-student](https://github.com/JRY-student)
-<!-- sync:end -->

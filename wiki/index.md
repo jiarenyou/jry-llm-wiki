@@ -157,6 +157,57 @@ This file is maintained by the LLM. Updated on every ingest.
 - [巴菲特：伯克希尔50年回顾](sources/buffett-berkshire-50-years-review.md) — 亲述伯克希尔的过去、现在与未来
 - [芒格：伯克希尔50周年评论](sources/munger-berkshire-50-years-commentary.md) — 芒格对伯克希尔50年的总结
 
+### Smart Manufacturing（智能制造）
+- [智能制造概述与工业4.0](sources/smart-mfg-overview-and-industry-4.md) — 四次工业革命演进与智能制造技术支柱全景
+- [ISA-95参考架构](sources/isa-95-reference-architecture.md) — 企业-控制系统集成的五层层级模型
+- [中国智能制造能力成熟度模型](sources/china-smart-mfg-maturity-model.md) — CMMM五级成熟度十大能力域评估体系
+- [工业互联网参考架构IIRA](sources/industrial-internet-reference-architecture-iira.md) — 美国IIC四重视角与三层架构
+- [数字孪生](sources/digital-twin.md) — 物理层/虚拟层/连接层三层架构与制造应用
+- [工厂数据平台总体架构](sources/factory-data-platform-architecture.md) — 五层分层架构，Kafka+Flink+Doris+Iceberg技术栈
+- [数据采集层架构](sources/data-collection-layer-architecture.md) — OT/IT/外部三大数据源与工业协议设计
+- [时序数据库选型](sources/tsdb-selection.md) — InfluxDB/TDengine/IoTDB五款对比分析
+- [实时与离线统一架构](sources/realtime-batch-unified-architecture.md) — Lambda/Kappa/湖仓一体三种范式
+- [实时数据流水线](sources/realtime-data-pipeline.md) — Flink/Kafka实时OEE计算与告警引擎
+- [工厂数据仓库建模](sources/factory-data-warehouse-modeling.md) — 五大主题域四层架构与时序聚合建模
+- [数据服务与API层](sources/data-service-api-layer.md) — 指标API/报表服务/看板选型与治理
+- [数据血缘与元数据管理](sources/data-lineage-and-metadata-management.md) — 字段级/表级/应用级血缘与元数据管理
+- [工厂主数据管理](sources/factory-master-data-management.md) — 设备/物料/工艺/人员五大主数据与编码治理
+- [工业数据治理框架](sources/industrial-data-governance-framework.md) — 五层治理体系与OT/IT融合治理模型
+- [工业数据质量](sources/industrial-data-quality.md) — 六维度质量评估与检测-隔离-修复闭环流程
+- [MES制造执行系统](sources/mes-manufacturing-execution-system.md) — ERP与SCADA之间的核心生产执行管理
+- [ERP企业资源计划](sources/erp-enterprise-resource-planning.md) — 整合企业核心业务流程的统一信息平台
+- [SCADA数据采集与监视](sources/scada-data-acquisition-and-monitoring.md) — 实时设备数据采集与集中监视控制系统
+- [PLM产品生命周期管理](sources/plm-product-lifecycle-management.md) — 产品从概念到退市全生命周期数据管理
+- [QMS质量管理系统](sources/qms-quality-management-system.md) — 全生命周期质量数据与检验流程管理
+- [WMS仓储管理系统](sources/wms-warehouse-management-system.md) — 仓库全流程管理，库存准确率98-99.5%
+- [CMMS设备维护管理](sources/cmms-equipment-maintenance-management.md) — 设备维护工单/备件/维修记录信息化平台
+- [OEE设备综合效率](sources/oee-overall-equipment-effectiveness.md) — 可用率×性能率×质量率，核心生产绩效指标
+- [可用率Availability](sources/availability.md) — OEE三要素之一，设备实际运行时间比例
+- [性能率Performance](sources/performance-rate.md) — OEE三要素之一，实际速度与理论速度比值
+- [质量率Quality](sources/quality-rate.md) — OEE三要素之一，合格品占总产量比例
+- [产能利用率](sources/capacity-utilization.md) — 实际产出与最大理论产能的比值
+- [良率Yield](sources/yield.md) — 投入原料转化为合格品的效率，链式乘积效应
+- [FPY直通率](sources/fpy-first-pass-yield.md) — 首次通过率，不经过返工一次性合格比例
+- [MTBF平均故障间隔](sources/mtbf-mean-time-between-failures.md) — 设备两次故障间平均运行时间
+- [MTTR平均修复时间](sources/mttr-mean-time-to-repair.md) — 故障到恢复的平均时间，五阶段全链路
+- [节拍时间Takt Time](sources/takt-time.md) — 满足客户需求每件产品允许的最大时间
+- [SPC统计过程控制](sources/spc-statistical-process-control.md) — 统计控制图区分普通/特殊原因变异
+- [Cpk过程能力指数](sources/cpk-process-capability-index.md) — 量化过程在规格限制内生产的能力
+- [视觉质检](sources/visual-quality-inspection.md) — 从传统CV到深度学习到视觉大模型的缺陷检测
+- [质量管控流程](sources/quality-control-process.md) — IQC/IPQC/FQC/OQC全生命周期质量体系
+- [工艺参数优化](sources/process-parameter-optimization.md) — DOE到贝叶斯优化到强化学习的方法演进
+- [智能排产](sources/intelligent-scheduling.md) — ML预测+运筹优化+实时反馈的动态排程
+- [APS生产计划与排程](sources/production-planning-and-scheduling-aps.md) — 有限产能建模与多约束优化排程
+- [能耗优化](sources/energy-consumption-optimization.md) — 削峰填谷、空压机群控与碳足迹跟踪
+- [异常检测与根因分析](sources/anomaly-detection-and-root-cause-analysis.md) — 统计/ML/DL检测+知识图谱追溯根因
+- [设备管理全流程](sources/equipment-management-full-lifecycle.md) — 从反应性维修到数据驱动全生命周期管理
+- [OEE损失分析](sources/oee-loss-analysis.md) — 六大损失分解与帕累托分析优先改进
+- [预测性维护](sources/predictive-maintenance.md) — 传感器数据预测设备健康，降本30-50%
+- [生产执行与报工](sources/production-execution-and-reporting.md) — APS排程到车间指令的MES核心模块
+- [物料管理与拉动](sources/material-management-and-pull.md) — 看板+JIT配送+WMS集成的精益物料系统
+- [生产成本指标体系](sources/production-cost-metrics.md) — OEE/良率/技术指标到经济语言的转化
+- [工业数据安全](sources/industrial-data-security.md) — OT/IT融合安全，ISA-95分层防御与等保2.0
+
 
 ## Entities
 - [DeepMind](entities/DeepMind.md) — Google旗下AI实验室，Chinchilla Law
@@ -181,6 +232,11 @@ This file is maintained by the LLM. Updated on every ingest.
 - [WuJun](entities/WuJun.md) — 计算机科学家/作家，成长三维度
 - [Eckhart Tolle](entities/EckhartTolle.md) — 心灵导师，《当下的力量》作者
 - [Viktor Frankl](entities/ViktorFrankl.md) — 意义疗法创始人，集中营幸存者
+- [Warren Buffett](entities/Buffett.md) — 价值投资旗手，伯克希尔董事长，1957-2024年度股东信作者
+- [Charlie Munger](entities/Munger.md) — 伯克希尔副董事长，推动投资哲学从"便宜"到"优质"
+- [Berkshire Hathaway](entities/BerkshireHathaway.md) — 全球最大控股公司之一，保险浮存金+资本配置模式
+- [WorldQuant](entities/WorldQuant.md) — 全球量化投资公司，BRAIN平台运营方
+- [ISA-95](entities/ISA95.md) — 企业系统与控制系统集成的国际标准
 
 ## Concepts
 - [ALiBi](concepts/ALiBi.md) — 线性偏置位置编码（概念页见PositionalEncoding）
@@ -221,5 +277,10 @@ This file is maintained by the LLM. Updated on every ingest.
 - [UnfalsifiabilityOfDivination](concepts/UnfalsifiabilityOfDivination.md) — 占卜的不可证伪性：逻辑闭环与心理需求
 - [Logotherapy](concepts/Logotherapy.md) — 意义疗法：意义意志、悲剧乐观主义、三种意义途径
 - [Mindfulness](concepts/Mindfulness.md) — 当下觉察：强迫性思考、小我、痛苦之身、冥想消解
+- [ValueInvesting](concepts/ValueInvesting.md) — 价值投资：安全边际、能力圈、复利、从格雷厄姆到巴菲特的演进
+- [SmartManufacturing](concepts/SmartManufacturing.md) — 智能制造：IoT+大数据+AI+数字孪生，工业4.0五层架构
+- [OEE](concepts/OEE.md) — 设备综合效率：可用率×性能率×质量率，世界级≥85%
+- [DigitalTwin](concepts/DigitalTwin.md) — 数字孪生：物理实体的数字映射，虚实双向交互
+- [IndustrialDataPlatform](concepts/IndustrialDataPlatform.md) — 工业数据平台：五层架构（采集→存储→计算→服务→应用）
 
 ## Syntheses

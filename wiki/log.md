@@ -173,3 +173,52 @@ Parse recent entries: `grep "^## \[" wiki/log.md | tail -10`
 ## [2026-05-18] ingest | 模型量化：从fp32到int4的压缩之旅
 ## [2026-05-18] ingest | 芒格：伯克希尔50周年评论——副主席的想法：过去和未来
 ## [2026-05-18] ingest | 为何西方领袖常被调侃，而中国皇帝却'神圣不可侵犯'？
+## [2026-05-19] ingest | 智能制造概述与工业4.0
+## [2026-05-19] ingest | ISA-95参考架构
+## [2026-05-19] ingest | 中国智能制造能力成熟度模型
+## [2026-05-19] ingest | 工业互联网参考架构-IIRA
+## [2026-05-19] ingest | 数字孪生-Digital Twin
+## [2026-05-19] ingest | 工厂数据平台总体架构
+## [2026-05-19] ingest | 数据采集层架构
+## [2026-05-19] ingest | 时序数据库选型
+## [2026-05-19] ingest | 实时与离线统一架构
+## [2026-05-19] ingest | 实时数据流水线
+## [2026-05-19] ingest | 工厂数据仓库建模
+## [2026-05-19] ingest | 数据服务与API层
+## [2026-05-19] ingest | 数据血缘与元数据管理
+## [2026-05-19] ingest | 工厂主数据管理
+## [2026-05-19] ingest | 工业数据治理框架
+## [2026-05-19] ingest | 工业数据质量
+## [2026-05-19] ingest | MES - 制造执行系统
+## [2026-05-19] ingest | ERP - 企业资源计划
+## [2026-05-19] ingest | SCADA - 数据采集与监视
+## [2026-05-19] ingest | PLM - 产品生命周期管理
+## [2026-05-19] ingest | QMS - 质量管理系统
+## [2026-05-19] ingest | WMS - 仓储管理系统
+## [2026-05-19] ingest | CMMS - 设备维护管理
+## [2026-05-19] ingest | OEE - 设备综合效率
+## [2026-05-19] ingest | 可用率 - Availability
+## [2026-05-19] ingest | 性能率 - Performance Rate
+## [2026-05-19] ingest | 质量率 - Quality Rate
+## [2026-05-19] ingest | 产能利用率 - Capacity Utilization
+## [2026-05-19] ingest | 良率 - Yield
+## [2026-05-19] ingest | FPY - 直通率
+## [2026-05-19] ingest | MTBF - 平均故障间隔时间
+## [2026-05-19] ingest | MTTR - 平均修复时间
+## [2026-05-19] ingest | 节拍时间 - Takt Time
+## [2026-05-19] ingest | SPC -- Statistical Process Control
+## [2026-05-19] ingest | Cpk -- Process Capability Index
+## [2026-05-19] ingest | Visual Quality Inspection
+## [2026-05-19] ingest | Quality Control Process
+## [2026-05-19] ingest | Process Parameter Optimization
+## [2026-05-19] ingest | Intelligent Scheduling
+## [2026-05-19] ingest | Production Planning and Scheduling -- APS
+## [2026-05-19] ingest | Energy Consumption Optimization
+## [2026-05-19] ingest | Anomaly Detection and Root Cause Analysis
+## [2026-05-19] ingest | Equipment Management -- Full Lifecycle
+## [2026-05-19] ingest | OEE Loss Analysis
+## [2026-05-19] ingest | Predictive Maintenance
+## [2026-05-19] ingest | Production Execution and Reporting
+## [2026-05-19] ingest | Material Management and Pull
+## [2026-05-19] ingest | Production Cost Metrics
+## [2026-05-19] ingest | Industrial Data Security
